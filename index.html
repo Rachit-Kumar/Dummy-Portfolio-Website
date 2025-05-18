@@ -1,0 +1,626 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web.Rachit</title>
+    <link rel="icon" href="./icon/redsvg.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'util.css' %}">
+
+
+  </head>
+  <body>
+    <div id="content-desktop">
+      <header>
+        <div class="containerfornav item-cent">
+          <nav class="flex item-cent justify-btw">
+            <div class="nav-left flex">
+              <div class="logo"></div>
+              <div class="links">
+                <a href="#home">Home</a>
+                <a id="about-remove" href="#about">About</a>
+                <a href="#exp">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#work">Work</a>
+                
+
+                <div id="remove" class="dropdown">
+                  <div class="dropbtn"></div>
+                  <div class="dropdown-content">
+                    
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="home" class="nav-right">
+              <a href="mailto:rachitkumar2711@gmail.com" target="_blank"
+                ><button class="btn btn-prim">Contact</button></a
+              >
+            </div>
+          </nav>
+          <div class="img flex item-cent justify-center">
+            <div class="left flex1 flex justify-center">
+              
+              <img src="{% static 'icon/street .png' %}" alt="Neon Mask" />
+
+            </div>
+            <div class="right flex1">
+              <h6>Rachit Kumar</h6>
+              <h1><span>Computer Freak</span></h1>
+              <p>
+                Student <br />
+                Web-site Cloner<br />
+                <br />
+              </p>
+              
+              
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="about">
+        <div class="containerforabout flex item-cent">
+          <div class="left flex1">
+            <img src="{% static 'icon/lamp.png' %}" alt="About Me" />
+          </div>
+          <div class="right flex1">
+            <h1 id="about">About <span>Me</span></h1>
+            <h3>Hello! i'm <span>Rachit Kumar</span></h3>
+            <p>
+              I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their professional skills and learning new things all the time.
+            </p>
+            
+      </section>
+      <section id="exp" class="justforcolor">
+        <section class="experience">
+          <div class="containerforexp">
+            <h1 class="section-heading"><span>Exp</span>erience</h1>
+            <p>Fake Experience till date</p>
+            <div class="card-box">
+              <div class="card">
+                <img src="{% static 'icon/ntl1.png' %}" alt="Next Tech Lab" />
+                <h2>Next Tech Lab</h2>
+                <h3>Blockchain/Cyber Sec</h3>
+                <p style="margin-bottom: 1.7rem">
+                  Great/Best team of highly Enthusiastic people,Working in
+                  Satoshi lab as Cyber-Security Learner and Blockchain
+                  developer.Very happy to work under highly experienced seniors.
+                </p>
+                <h4>Oct 2020 - Present</h4>
+              </div>
+              <div class="card">
+                <img src="{% static 'icon/geny1.png' %}" alt="Gen-Y" />
+                <h2>Gen-Y</h2>
+                <h3>DS/ML Member</h3>
+                <p>
+                  One of the best team to work with under data-science
+                  domain.Working as a Machine Learning Member.Done some basics
+                  projects under supervison of some awesome future data
+                  scientist.
+                </p>
+                <h4>Nov 2020 - Present</h4>
+              </div>
+              <div class="card">
+                <img src="{% static 'icon/tezos1.png' %}" alt="Tezos-India" />
+                <h2>Tezos-India</h2>
+                <h3>Blockchain</h3>
+                <p style="margin-bottom: 1.5rem">
+                  Tezos-India mainly takes role in sponsoring team for a
+                  hackathon. Found awesome members of Next-Tech and currently
+                  actively participating in hackathons.
+                </p>
+                <h4>Dec 2020 - Present</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="skills" class="progress-bar">
+        <div class="containerforskillbar">
+          <div class="heading-skill">
+            <h1><span>Fake Skills</span>s</h1>
+            <p>Subject to Rapid Change</p>
+          </div>
+          <div class="skillgrid">
+            <div class="skillbox">
+              <p>gnu/Linux</p>
+              <p>80%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <p>Ethical Hacking</p>
+              <p>20%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 20%"></div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <p>Blockchain</p>
+              <p>60%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 60%"></div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <p>Ai/ml</p>
+              <p>38%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 38%"></div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <p>Web-dev</p>
+              <p>75%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <p>C</p>
+              <p>80%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <p>C++</p>
+              <p>57%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 57%"></div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <p>PYTHON</p>
+              <p>80%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <p>SQL</p>
+              <p>95%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <p>html</p>
+              <p>98%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 98%"></div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <p>css</p>
+              <p>90%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <p>javascript</p>
+              <p>40%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 40%"></div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <p>solidity</p>
+              <p>70%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skillbox">
+              <p>bash</p>
+              <p>60%</p>
+              <div class="skill">
+                <div class="skill-lv" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="work" class="work">
+        <div class="containerforwork">
+          <div class="heading-work">
+            <h1><span>MY WORK </span></h1>
+            <p>Some Blogs and Git Repos (Only to show on this site)</p>
+          </div>
+          <div class="slider">
+            <div class="slide">
+              <!-- <div class="slide-img">
+                <img src="#" alt="" />
+              </div> -->
+              <div class="slide-content">
+                <a
+                  
+                  ><h1>Machine Learning Projects</h1></a
+                >
+                <span>Oct 15, 2022</span>
+                <p>
+                  These projects were my starting journey towards real data
+                  science. Done under Gen-Y supervision, this is a Linear
+                  Regression Model from Scratch.
+                </p>
+                
+                
+              </div>
+            </div>
+
+            <div class="slide">
+              <!-- <div class="slide-img">
+                <img src="#" alt="" />
+              </div> -->
+              <div class="slide-content">
+                <a
+                 
+                  ><h1>Numpy</h1></a
+                >
+                <span>Nov 19, 2022</span>
+                <p>
+                  A simple guide to one of the most famous pyhton libraries
+                  'Numpy'. Fun Project for sharing knowledge of numpy.In this
+                  blog basic commands of numpy is covered in explanatory manner.
+                </p>
+                
+              </div>
+            </div>
+
+            <div class="slide">
+              <!-- <div class="slide-img">
+                <img src="#" alt="" />
+              </div> -->
+              <div class="slide-content">
+                <a
+                  
+                  ><h1>Types of ML Algorithims</h1></a
+                >
+                <span>Nov 19, 2022</span>
+                <p>
+                  Also a fun project, this blog gives info on types of Machine
+                  Learning Algorithims. This blog was written while i was
+                  learning about Larger view/usecase of Data Science.
+                </p>
+                
+              </div>
+            </div>
+
+            <div class="slide">
+              <!-- <div class="slide-img"><img src="./resize/Webp.net-resizeimage.jpg" alt="" /></div> -->
+              <div class="slide-content">
+                <a
+                  
+                  ><h1>Tic-Tac-Toe Game</h1></a
+                >
+                <span>June 08, 2022</span>
+                <p>
+                  This was my first project after learning pyhton. Its a simple
+                  tic-tac-toe game written entirely in python. A retro feeling
+                  of playing games in terminal.
+                </p>
+                
+              </div>
+            </div>
+
+            <div class="slide">
+              <!-- <div class="slide-img">
+                <img src="#" alt="" />
+              </div> -->
+              <div class="slide-content">
+                <a
+                  
+                  ><h1>Linux Update.sh</h1></a
+                >
+                <span>May 29, 2022</span>
+                <p>
+                  My first bash script. I was frustrated of typing apt-get
+                  update / upgrade / dist-upgrade. So i wrote a script so that i
+                  have to only type update and all the above mention commands
+                  will run.
+                </p>
+                
+              </div>
+            </div>
+
+            <div class="slide">
+              <!-- <div class="slide-img">
+                <img src="#" alt="" />
+              </div> -->
+              <div class="slide-content">
+                
+                  <h1>Portfolio Website</h1></a
+                >
+                <span>Feb 22, 2023</span>
+                <p>
+                  This is my second website and my first portfolio website. This
+                  was made out of personal intrest and also to be submitted as a
+                  recruitment test project. 3 days and 1500 lines of html & css.
+                  Thus you are seeing this website.
+                </p>
+                
+              </div>
+            </div>
+
+            <div class="slide">
+              <!-- <div class="slide-img">
+                <img src="#" alt="" />
+              </div> -->
+              <div class="slide-content">
+                <a
+                 
+
+                  ><h1>Time Table Bot</h1></a
+                >
+                <span>Sep 12, 2022</span>
+                <p>
+                  This was also a fun project, since classes are online. So i
+                  was fed up of looking at my time-table in Academic Website
+                  (Very Long and Boring Process) . So i made a discord bot that
+                  will make it easy for everyone in our class server to look at
+                  their time-table.
+                </p>
+            </div>
+
+            <div class="slide">
+              <!-- <div class="slide-img">
+                <img src="#" alt="" />
+              </div> -->
+              <div class="slide-content">              
+                              
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="certification">
+        <div class="certification-heading">
+          <h1><span>CERT</span>IFICATIONS</h1>
+          <p>Some of my Fake Certifications</p>
+        </div>
+        <div class="certificates-grid">
+          <ul>
+            <li>
+              <div class="cert">
+                <a
+                 
+                  ><h1>
+                    Linux Mastery
+                    <span>-Udemy (Internet of Things acadmey Ltd.)</span>
+                  </h1></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="cert">
+                <a
+                 
+                  ><h1>
+                    Machine Learning
+                    <span>-Coursera (Stanford University-Andrew Ng)</span>
+                  </h1></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="cert">
+                <a
+                 
+                  ><h1>
+                    Blockchain Basics<span
+                      >-Coursera (The State University of New York)</span
+                    >
+                  </h1></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="cert">
+                <a
+                  
+                  ><h1>
+                    Smart Contracts using Solidity
+                    <span>-Coursera (The State University of New York)</span>
+                  </h1></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="cert">
+                <a
+                  
+                  ><h1>
+                    Security and Privacy in TOR Network
+                    <span>-Coursera (University of Colorado)</span>
+                  </h1></a
+                >
+              </div>
+            </li>
+
+            <li>
+              <div class="cert">
+                <a
+                  
+                  ><h1>
+                    Google Cloud Essentials <span>- Qwiklabs Quest</span>
+                  </h1></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="cert">
+                <a
+                  
+                  ><h1>
+                    Create and Manage Cloud Resources
+                    <span>- Qwiklabs Quest</span>
+                  </h1></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="cert">
+                <a
+                  
+                  ><h1>
+                    Google Cloud Baseline Infrastructure<span
+                      >- Qwiklabs Quest</span
+                    >
+                  </h1></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="cert">
+                <a
+                  
+                  ><h1>
+                    Python Bible<span
+                      >-Udemy (Internet of Things acadmey Ltd.)</span
+                    >
+                  </h1></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="cert">
+                <a
+                  
+                  ><h1>
+                    The Complete SQL Bootcamp<span>-Udemy (Pierian Data)</span>
+                  </h1></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="cert">
+                <a
+                 
+                  ><h1>
+                    Anoynimity, Privacy and Security<span
+                      >-Udemy (Zsecurtiy)</span
+                    >
+                  </h1></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="cert">
+                                  ><h1>
+                    HTML & CSS Tutorial and Projects Course<span
+                    
+                    >
+                  </h1></a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contactus">
+        <div class="contact-heading">
+          <h1>CON<span>TACT</span></h1>
+          <p>Contact Details</p>
+        </div>
+        <div class="contact-cards">
+          <div class="cards">
+            <img src="{% static 'icon/phone.svg' %}" alt="" />
+            <h2>Call On</h2>
+            <a href="tel:91987654321"><h6>+91 987654321</h6></a>
+          </div>
+
+          <div class="cards">
+            <img src="{% static 'icon/mail.svg' %}" alt="" />
+            <h2>Mail On</h2>
+            <a href="Portfolio@gmail.com"
+              ><h6>Portfolio@gmail.com</h6></a
+            >
+          </div>
+
+          <div class="cards">
+            <img src="{% static 'icon/map.svg' %}" alt="" />
+            <h2>Address</h2>
+            <h6>XYZ,  <br />XYZ</h6>
+          </div>
+        </div>
+        
+        <p>This Site is Under Development (Error Code Dev414 ), Non of the information present are 100% Correct.       
+        </p>
+        <form action="{% url 'submit_form' %}" method="POST">
+          {% csrf_token %}
+          <div class="form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="text" name="email" required/>
+          </div>
+          <div class="form-text">
+            <input type="text" name="subject" placeholder="Your Subject" required/>
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <div class="last-btn">
+            <button type="submit" class="btn btn-prim">Send Message</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="footer">
+        <footer>
+          <div class="footer-socials">
+            <a href="#" target="_blank"
+              ><img src="{% static 'icon/world.svg' %}" alt="Website"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="{% static 'icon/github2.svg' %}" alt="Github"
+            /></a>
+            <a
+              href="#"
+              target="_blank"
+              ><img src="{% static 'icon/linkedin.svg' %}" alt="Linkedin"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="{% static 'icon/medium.svg' %}" alt="Medium"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="{% static 'icon/blogger.svg' %}" alt="Blogger"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="{% static 'icon/twitter.svg' %}" alt="Twitter"
+            /></a>
+          </div>
+          <div class="copyright">Copyright 2024 &copy; All Right Reserved</div>
+          <div class="up">
+            <a href="#home"><img src="{% static 'icon/up.svg' %}" alt="UP" /></a>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <div id="content-mobile">
+      <h1>Legit Error - 404</h1>
+      <h2> SORRY ,This site is under development for mobile screens.</h2>
+      <h2 style="color: var(--red)">Please Open this site on PC/Laptop/Tablet.</h2>
+    </div>
+  </body>
+</html>
